@@ -1,0 +1,15 @@
+#include <stdio.h>
+//Crie uma função para converter de Farenheit para Celsius
+float converter(){
+  float c, f;
+  float resultado;
+  printf("digite quanros graus são: ");
+  scanf("%f", &f);
+  c = (f-32)/(9/5); 
+  return c;
+}
+int main(void) {
+  float a=converter();
+  printf("%f", a);
+  return 0;
+}
