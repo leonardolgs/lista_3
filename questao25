@@ -1,0 +1,92 @@
+#include <stdio.h>
+#include <string.h>
+//Leia um texto que o usuário digitar no teclado. Em seguida, informe a contagem de ocorrências de cada um dos caracteres [a-z] digitados, não importando se o usuário digitou letras minúsculas ou maiúsculas.
+int main(void) {
+  char texto[100];
+  int i, x, leta = 0, letb = 0, letc = 0, letd = 0, lete = 0, letf = 0, letg = 0, leth = 0, leti = 0, letj = 0, letk = 0, letl = 0, letm = 0, letn = 0, leto = 0, letp = 0, letq = 0, letr = 0, lets = 0, lett = 0, letu = 0, letv = 0, letw = 0, letx = 0, lety = 0, letz = 0;
+  printf("Digite algo: ");
+  fgets(texto, 100, stdin);
+  for(i = 0; i < strlen(texto)+1; i++){
+    x = texto[i];
+    if(x == 65 || x == 97){
+      leta++;
+    }
+    if(x == 66 || x == 98){
+      letb++;
+    }
+    if(x == 67 || x == 99){
+     letc++;
+    }
+    if(x == 68 || x == 100){
+      letd++;
+    }
+    if(x == 69 || x == 101){
+      lete++;
+    }
+    if(x == 70 || x == 102){
+      letf++;
+    }
+    if(x == 71 || x == 103){
+      letg++;
+    }
+    if(x == 72 || x == 104){
+      leth++;
+    }
+    if(x == 73 || x == 105){
+      leti++;
+    }
+    if(x == 74 || x == 106){
+      letj++;
+    }
+    if(x == 75 || x == 107){
+      letk++;
+    }
+    if(x == 76 || x == 108){
+     letl++;
+    }
+    if(x == 77 || x == 109){
+      letm++;
+    }
+    if(x == 78 || x == 110){
+      letn++;
+    }
+    if(x == 79 || x == 111){
+      leto++;
+    }
+    if(x == 80 || x == 112){
+      letp++;
+    }
+    if(x == 81 || x == 113){
+      letq++;
+    }
+    if(x == 82 || x == 114){
+      letr++;
+    }
+    if(x == 83 || x == 115){
+      lets++;
+    }
+    if(x == 84 || x == 116){
+      lett++;
+    }
+    if(x == 85 || x == 117){
+      letu++;
+    }
+    if(x == 86 || x == 118){
+      letv++;
+    }
+    if(x == 87 || x == 119){
+      letw++;
+    }
+    if(x == 88 || x == 120){
+      letx++;
+    }
+    if(x == 89 || x == 121){
+      lety++;
+    }
+    if(x == 90 || x == 122){
+      letz++;
+    }
+  }
+  printf("Ocorrencias: \na: %d \nb: %d \nc: %d \nd: %d \ne: %d \nf: %d \ng: %d \nh: %d \ni: %d \nj: %d \nk: %d \nl: %d \nm: %d \nn: %d \no: %d \np: %d \nq: %d \nr: %d \ns: %d \nt: %d \nu: %d \nv: %d \nw: %d \nx: %d \ny: %d \nz: %d", leta, letb, letc, letd, lete, letf, letg, leth, leti, letj, letk, letl, letm, letn, leto, letp, letq, letr, lets, lett, letu, letv, letw, letx, lety, letz);
+  return 0;
+}
