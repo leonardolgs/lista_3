@@ -1,0 +1,18 @@
+#include <stdio.h> 
+#include <stdlib.h>
+//Crie uma função para gerar um número aleatório no intervalo fechado [A:B[A:B], sendo AA e BB passados como parâmetro para essa função. 
+void aleatorio(int A, int B){ 
+  int num = (rand() % (B - A + 1)) + A; 
+  printf("%d ", num); 
+} 
+int main() { 
+  int A=0, B=0;
+  printf("Digite o primeiro numero do intervalo: ");
+  scanf("%d", &A); 
+  printf("Digite o proximo numero do intervalo: ");
+  scanf("%d", &B); 
+  srand(time(0));
+  printf("Aleatorio no intervalo [%d, %d] = ", A, B); 
+  aleatorio(A, B);
+  return 0; 
+}
