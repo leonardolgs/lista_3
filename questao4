@@ -1,0 +1,14 @@
+#include <stdio.h>
+//Calcular os divisores de um nº qualquer.
+int main(void) {
+  int a=0,i, div=0;
+  printf("digite o numero que deseja saber os divisores: ");
+  scanf("%d", &a);
+  for(i=1; i<=a; i++){
+    div=i;
+    if(a%div==0){
+      printf("o numero %d é divisor de %d\n", div, a);
+    }
+  }
+  return 0;
+}
