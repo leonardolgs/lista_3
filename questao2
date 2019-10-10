@@ -1,0 +1,12 @@
+#include <stdio.h>
+/*Imprimir os múltiplos de 7 menores que 200*/
+int main(void) {
+  int a,m=0;
+  for(a=0;a<=200;a++){
+    if(a%7==0){
+      m=a;
+      printf("o numero %d é multiplo de 7\n", m);
+    }
+}
+return 0;
+}
