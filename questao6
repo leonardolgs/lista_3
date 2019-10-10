@@ -1,0 +1,12 @@
+#include <stdio.h>
+//Imprimir o menor inteiro positivo x cujo quadrado é superior a um valor L dado.
+int main(void) {
+  int l, x=0;
+  printf("digite um valor: ");
+  scanf("%d", &l);
+  while(x*x <= l){
+    x++;
+  }
+  printf("o valor de x é: %d", x);
+  return 0;
+}
