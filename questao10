@@ -1,0 +1,21 @@
+#include <stdio.h>
+//Ler 10 valores, um de cada vez, e contar quantos deles estão no intervalo [10,50] e quantos deles estão fora deste intervalo, mostrando estas informações.
+int main(void) {
+  int i, v, d=0, f=0, som1=0, som2=0;
+for(i=1;i<=10;i++){
+  printf("digite um numero: ");
+  scanf("%d", &v);
+  if(v>=10 && v<=50){
+    d=1;
+    f=0;
+  }
+  else{
+    d=0;
+    f=1;
+  }
+  som1+=d;
+  som2+=f;
+}
+printf("dentro do intervalo: %d\nfora dele: %d", som1, som2);
+  return 0;
+}
