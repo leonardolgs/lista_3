@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+//Escrever ao contrário um texto que o usuário forneca
+char reverse(char txt[100]){
+  char a[100], reverse[1000];
+  int inicio, fim, count=0;
+  fim = strlen(txt) - 1;
+  for(inicio = 0; inicio<strlen(txt); inicio++){
+    reverse[inicio]= txt[fim];
+    fim--;
+  }
+  reverse [inicio]='\0';
+  printf("%s", reverse);
+  return 0;
+}
+int main(void) {
+  char txt[100];
+  printf("digite algo:\n");
+  fgets(txt, 1000, stdin);
+  printf("o texto ao contrario fica: ");
+  reverse(txt);
+  return 0;
+}
