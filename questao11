@@ -1,0 +1,20 @@
+#include <stdio.h>
+//Ler um número e escreva se ele "é primo" ou "não é primo".
+int main(void) {
+  int num=0, cont=0, i=0, r=0;
+  printf("digite um numero: ");
+  scanf("%d", &num);
+  for(i=1;i<=num;i++){
+    r=num%i;
+    if(r==0){ 
+      cont++;
+    }
+  }
+  if(cont==2){
+    printf("o numero é primo.");
+  }
+  else{
+    printf("o numero não é primo.");
+  }
+  return 0;
+}
